@@ -1,0 +1,36 @@
+main:
+  a:
+    name: application
+    a:
+      cmd: atom
+    t:
+      name: terminal
+      cmd: gnome-terminal
+    v:
+      name: vivaldi
+      cmd: vivaldi-stable
+    k: konqueror
+
+  c:
+    name: clipboard
+    a:
+      name: append
+      cmd: xonsh clipboard_append.xsh
+    h:
+      name: history
+
+  s:
+    name: script
+    u:
+      name: to update
+      v:
+        name: vivaldi css
+        cmd: xonsh $HOME/scri/vivaldi_css.xsh
+      p:
+        name: pacman
+        cmd: sudo pacman -Syu
+      y:
+        name: yaourt
+        cmd: yaourt -Syu --aur
+    d:
+      name: to download
